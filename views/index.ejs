@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liverpool FC App</title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+    <div class="main">
+      <h1>Liverpool FC Application</h1>
+      <h2>Please sign in or create free account</h2>
+      <div class="menu">
+        <form class="signInForm" action="welcome" method="POST">
+          <label for="login">Sign in to use app</label><br />
+          <input type="text" name="login" id="login" placeholder="Database username"
+          required>
+          <label for=""></label>
+          <input type="password" name="pass" id="pass" placeholder="Database password"
+          required>
+          <input type="submit" value="Sign in!">
+        </form>
+
+        <div class="space"></div>
+
+        <form class="signInForm" action="indexUser" method="POST">
+          <label for="login">Create account (It's free)</label><br />
+          <input type="text" name="c_login" id="c_login" placeholder="Database username"
+          required>
+          <label for=""></label>
+          <input type="password" name="c_pass" id="c_pass" placeholder="Database password"
+          required>
+          <input type="submit" value="Creare account">
+        </form>
+      </div>
+  </div>
+  <script type="text/javascript">
+
+  </script>
+  </body>
+</html>

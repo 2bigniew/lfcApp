@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liverpool FC App</title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+    <div class="mainAdd">
+      <h2>Add informations about new Player!</h2>
+      <form action="addPlayerData" method="POST" id="playerForm" class="playerForm">
+        <label for="position">Position</label>
+        <select name="position" id="position">
+          <option value="1" label="Goalkeeper"></option>
+          <option value="2" label="Centre-back"></option>
+          <option value="3" label="Left full-back"></option>
+          <option value="4" label="Right full-back"></option>
+          <option value="5" label="Left wing-back"></option>
+          <option value="6" label="Right wing-back"></option>
+          <option value="7" label="Defensive midfield"></option>
+          <option value="8" label="Centre midfield"></option>
+          <option value="9" label="Attacking midfield" selected></option>
+          <option value="10" label="Left midfield"></option>
+          <option value="11" label="Right midfield"></option>
+          <option value="12" label="Centre forward"></option>
+          <option value="13" label="Second striker"></option>
+          <option value="14" label="Left winger"></option>
+          <option value="15" label="Right winger"></option>
+        </select><br />
+
+        <input type="text" name="firstname" id="firstname" placeholder="firstname"
+        required ><br />
+        <input type="text" name="lastname" id="lastname" placeholder="lastname"
+        required><br />
+        <input type="number" name="playerNum" id="playerNum" placeholder="e.g. 10"
+        min="1" max="99" required><br />
+
+        <label for="strFoot">Stronger foot</label>
+        <select name="strFoot" id="strFoot">
+          <option value="0" label="Right"></option>
+          <option value="1" label="Left"></option>
+        </select><br />
+
+        <label for="nation">Nationality</label>
+        <select name="nation" id="nation">
+          <option value="1" label="German"></option>
+          <option value="2" label="Dutch"></option>
+          <option value="3" label="English" selected></option>
+          <option value="4" label="Croatians"></option>
+          <option value="5" label="Brazilians"></option>
+          <option value="6" label="Estonians"></option>
+          <option value="7" label="Spaniards"></option>
+          <option value="8" label="Egyptians"></option>
+          <option value="9" label="Senegalese"></option>
+          <option value="10" label="Belgians"></option>
+          <option value="11" label="Scots"></option>
+          <option value="12" label="Cameroonians"></option>
+          <option value="13" label="Hungarians"></option>
+          <option value="14" label="Welsh"></option>
+        </select><br />
+
+        <label for="coach">Who buy?</label>
+        <select name="coach" id="coach">
+          <option value="1" label="Jurgen Klopp" selected></option>
+          <option value="2" label="Brendan Rodgers"></option>
+          <option value="3" label="Kenny Dalglish"></option>
+          <option value="4" label="Roy Hodgson"></option>
+          <option value="5" label="Rafa Benitez"></option>
+        </select><br />
+
+        <input type="submit" value="Submit!" id="inputSubmit" disabled>
+      </form>
+    </div>
+    <a href="./welcome" class="backToIndex anchorBtn">Back to main page!</a>
+
+    <script type="text/javascript" src="assets/js/addPlayer.js"></script>
+  </body>
+</html>

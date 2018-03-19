@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liverpool FC App</title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+    <div class="main">
+      <h2>Player Info</h2>
+      <div id="queryResult">
+
+      </div>
+
+      <a href="../welcome" class="backToIndex anchorBtn">Back to main page!</a>
+    </div>
+
+    <script type="text/javascript">
+      const playerInfo = <%- JSON.stringify(QueryResult) %>;
+      const playerTable = `
+      <table>
+        <tr>
+          <th>Firstname</th><th>Lastname</th><th>Number</th><th>Nationality</th><th>Position</th>
+        </tr>
+        <tr>
+          <td>${playerInfo[0].Firstname}</td><td>${playerInfo[0].Lastname}</td>
+          <td>${playerInfo[0].Number}</td><td>${playerInfo[0].Nationality}</td>
+          <td>${playerInfo[0].Position}</td>
+        </tr>
+      </table>
+      `;
+      document.getElementById('queryResult').innerHTML = playerTable;
+      console.log(playerInfo[0]);
+    </script>
+  </body>
+</html>

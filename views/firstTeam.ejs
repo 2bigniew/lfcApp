@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liverpool FC App</title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="firstTeam">
+        <h2>First team</h2>
+        <button class="btn" id="firstTeamBtn" onclick="showFirstTeam()">Show First Team</button>
+        <a href="./getFile" class="anchorBtn">Get file with first team players</a>
+        <ul id="playersList"></ul>
+      </div>
+      <a href="./welcome" class="backToIndex anchorBtn">Back to main page!</a>
+    </div>
+
+    <script type="text/javascript">
+      const firstTeam = <%- JSON.stringify(firstTeam) %>;
+    </script>
+    <script type="text/javascript" src="assets/js/showFirstTeam.js"></script>
+  </body>
+</html>

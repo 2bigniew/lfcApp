@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liverpool FC App</title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+    <div class="main">
+      <a href="/resingin" class="backToIndex anchorBtn">Back to main page!</a>
+    </div>
+    <p class="wrongData"></p>
+
+    <script type="text/javascript">
+      const wrongData = <%- JSON.stringify(wrongData) %>
+      if (wrongData) {
+        document.querySelector('.wrongData').innerHTML = 'Uncorect Database username or Database password. Please, try again';
+      }
+    </script>
+  </body>
+</html>

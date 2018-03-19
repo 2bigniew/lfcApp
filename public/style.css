@@ -1,0 +1,203 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html, body, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  text-align: center;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+.main{
+  width: 100%;
+  min-height: 100vh;
+  background: url("/assets/img/lfc.jpg") fixed center no-repeat;
+  background-size: contain;
+}
+
+.mainAdd{
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section {
+  display: block;
+  width: 19%;
+  height: 40px;
+  background-color: rgba(235,100,100,.4);
+  text-align: center;
+  cursor: pointer;
+  padding-top: 20px;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+@media (max-width: 800px){
+  .menu{flex-direction: column; justify-content: center;}
+  .section{width: 100%;}
+}
+
+.section:hover {
+    background-color: rgba(235,70,70,.7);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+span {
+  padding: 10px;
+  margin: 3px;
+}
+
+.playerForm{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playerForm>input, .playerForm>select, .signInForm>input {
+  height: 30px;
+  padding: 3px;
+  border: 1px solid black;
+  background: white;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+
+input[type=submit] {
+  background-color: rgb(200, 70, 70);
+  cursor: pointer;
+}
+
+.btn{
+  background-color: rgb(200, 70, 70);
+  width: 150px;
+  height: 30px;
+  padding: 3px 10px;
+  display: block;
+  border: 1px solid black;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.firstTeam{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.firstTeamBG{
+    background: rgba(235,235,235,.7);
+    margin-top: 70px;
+}
+
+.playersList{
+  width: 100%;
+}
+
+.liPlayer{
+  width: 100%;
+}
+
+.pair{
+  width: 40%;
+}
+
+.keyPlayer {
+  font-weight: bold;
+}
+
+.backToIndex {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+.wrongData {
+  color: red;
+  position: absolute;
+  bottom: 10%;
+  text-align: center;
+}
+
+.userCreated {
+  color: green;
+  position: absolute;
+  bottom: 10%;
+  text-align: center;
+}
+
+.anchorBtn {
+  display: block;
+  min-width: 100px;
+  max-width: 300px;
+  height: 20px;
+  background-color: rgba(235,100,100,.4);
+  text-align: center;
+  cursor: pointer;
+  padding-top: 20px;
+  border: 1px solid black;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+}
+
+.anchorBtn:hover {
+    background-color: rgba(235,70,70,.7);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.logout {
+  background-color: rgba(235,100,180,.6);
+}
+
+.logout:hover {
+  background-color: rgba(235,70,180,.7);
+}
+
+.space {
+  width: 100px;
+}
+
+
+.wrongForm {
+  border: 1px solid red;
+  background: rgba(200,100,100, .3);
+}
