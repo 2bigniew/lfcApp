@@ -7,4 +7,5 @@
 5. Run SQL script "liverpoolfc_database.sql" from database - script directory
 in your database environment
 6. Run "npm start" in Node
-7. Enjoy!
+7. Listen lfcApp on 127.0.0.1:3000
+8. Enjoy!
