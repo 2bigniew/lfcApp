@@ -104,7 +104,7 @@ app.get('/firstTeam', function(req, res) {
   con.query(queries.playersPrimaryData, (err, result) => {
     if (err) throw err;
     res.render('firstTeam', { firstTeam: result });
-  })
+  });
 });
 
 
@@ -153,7 +153,7 @@ app.get('/getFile', function(req, res) {
     const pText = [];
     const playerFile = result.forEach(player => pText.push(JSON.stringify(player)));
     writeFile.write(pText.join(String.fromCharCode(10)));
-    res.render('firstTeam', { firstTeam: result });
+    res.render('firstTeamFile', { firstTeam: result });
   });
 });
 

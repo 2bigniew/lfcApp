@@ -11,7 +11,7 @@
         <h2>First team</h2>
         <button class="btn" id="firstTeamBtn" onclick="showFirstTeam()">Show First Team</button>
         <a href="./getFile" class="anchorBtn" onclick="showMsg()">Get players .txt file</a>
-        <p id="message"></p>
+        <p id="message">lfcApp/files/playersList.txt created successfully</p>
         <ul id="playersList"></ul>
       </div>
       <a href="./welcome" class="backToIndex anchorBtn">Back to main page!</a>
@@ -19,13 +19,6 @@
 
     <script type="text/javascript">
       const firstTeam = <%- JSON.stringify(firstTeam) %>;
-
-      function showMsg() {
-        const msg = 'lfcApp/files/playersList.txt created successfully';
-        document.getElementById('message').innerHTML = msg;
-      }
-
-
     </script>
     <script type="text/javascript" src="assets/js/showFirstTeam.js"></script>
   </body>
